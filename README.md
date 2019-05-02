@@ -13,18 +13,20 @@ https://github.com/docker/labs/tree/master/beginner/
 
     * docker run <image>
     * docker images  ===     docker image ls  
-    * List Docker containers (running, all, all in quiet mode)
+    * List Docker containers (running, all, all in quiet mode)  ===  ```docker ps``` 
         * docker container ls
         * docker container ls --all
         * docker container ls -aq
     * docker pull <image> -- download docker image 
     * docker container ls -- list all the containers running 
+    * 
 
 ## 1.0 Running your first container
 https://github.com/docker/labs/blob/master/beginner/chapters/alpine.md
 
-``` $ docker pull alpine ```
-```docker run alpine ls -l ```
-docker run alpine echo "hello from alpine"
-$ docker run alpine /bin/sh -- no output
- 
+``` $ docker pull alpine ``` <br/>
+```docker run alpine ls -l ```<br/>
+```docker run alpine echo "hello from alpine"``` // 
+```docker run alpine /bin/sh ``` -- no output // ```exit ```
+```docker run -it alpine /bin/sh ``` -- output because it runs in interactive terminal <br/>
+docker ps -a 
