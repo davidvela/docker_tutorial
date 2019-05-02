@@ -1,6 +1,7 @@
 # Docker Tutorial 
 Getting started <br/>
 link: https://docs.docker.com/get-started/#recap-and-cheat-sheet
+![logo](https://github.com/davidvela/docker_tutorial/blob/master/docker4Beg.png)
 
 ## tutorials: 
 https://docs.docker.com/samples/#tutorial-labs 
