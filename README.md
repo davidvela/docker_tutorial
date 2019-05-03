@@ -50,5 +50,16 @@ Types: base / child images %% Official / User
 2. Write a Dockerfile
 3. Build the image
 4. Run your image
-5. Dockerfile commands summary
+5. Push image 
 
+1, 2 -- create files 
+3 build : (simple command) optional:  -t tag name; location Dockerfile  . current dir
+    ```$ docker build -t davidvela/myfirstapp . ```
+4 run image: 
+    ```$ docker run -p 8888:5000 --name myfirstapp davidvela/myfirstapp```
+    website: http://localhost:8888
+
+5 push image to docker hub -- docker login -> user and password 
+    ```docker push davidvela/myfirstapp```
+finally docker stop myfirstapp and docker rm myfirstapp
+or => docker rm -f myfirstapp
