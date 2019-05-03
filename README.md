@@ -8,7 +8,9 @@ https://docs.docker.com/samples/#tutorial-labs
 Docker for Beginner: A good “Docker 101” course.
 https://github.com/docker/labs/tree/master/beginner/
 
-
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+  
 ## commands: 
 
     * docker run <image>
