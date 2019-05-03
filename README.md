@@ -30,3 +30,25 @@ https://github.com/docker/labs/blob/master/beginner/chapters/alpine.md
 ```docker run alpine /bin/sh ``` -- no output // ```exit ```
 ```docker run -it alpine /bin/sh ``` -- output because it runs in interactive terminal <br/>
 docker ps -a 
+
+# 2.0 Webapps with Docker
+https://github.com/docker/labs/blob/master/beginner/chapters/webapps.md<br>
+docker run -d dockersamples/static-site -- detach mode 
+$ docker stop a7a0e504ca3e
+$ docker rm   a7a0e504ca3e
+launch container in detach mode: 
+docker run --name static-site -e AUTHOR="David" -d -P dockersamples/static-site
+$ docker port static-site
+$ docker-machine ip default
+docker stop static-site
+docker rm static-site
+IMAGES 
+docker search 
+Types: base / child images %% Official / User 
+## 2.3 create your first image : Flask 
+1. Create a Python Flask app that displays random cat pix
+2. Write a Dockerfile
+3. Build the image
+4. Run your image
+5. Dockerfile commands summary
+
