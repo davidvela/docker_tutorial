@@ -10,7 +10,7 @@ https://github.com/docker/labs/tree/master/beginner/
 
   git config --global user.email "you@example.com"
   git config --global user.name "Your Name"
-  
+
 ## commands: 
 
     * docker run <image>
@@ -65,3 +65,28 @@ Types: base / child images %% Official / User
     ```docker push davidvela/myfirstapp```
 finally docker stop myfirstapp and docker rm myfirstapp
 or => docker rm -f myfirstapp
+
+new tag: 
+    ```$ docker build -t davidvela/myfirstapp:v1 . ```
+    ```docker push davidvela/myfirstapp:v1```
+
+
+# 3.0 Deploying an app to a Swarm
+Swarm is an open-source container orchestration platform\
+Swarm turns a pool of Docker hosts into a virtual, single host.
+<br/>
+## VOTING APP 
+https://github.com/dockersamples/example-voting-app
+five components:
+
+1. Python webapp which lets you vote between two options
+2. Redis queue which collects new votes
+3. .NET worker which consumes votes and stores them in…
+4. Postgres database backed by a Docker volume
+5. Node.js webapp which shows the results of the voting in real time
+
+
+# 4.0 -- mlflow in docker container 
+1.  create mlflow example 
+2. Write a Dockerfile
+3. Build, Run, Push the image
